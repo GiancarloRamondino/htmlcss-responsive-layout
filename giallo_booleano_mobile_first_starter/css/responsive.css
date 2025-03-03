@@ -1,1 +1,66 @@
 /* Soluzione qui */
+
+
+@media screen and (max-width: 576px){
+    #topbar {
+        height: 70px;
+        padding: 0 20px;
+        background-color: #fff;
+    
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .recipe-origin {
+        display: inline-block;
+    }
+
+    .recipe-name {
+        color: #4e3969;
+        font-weight: 700;
+    }
+
+    
+    hr{
+        color: orange;
+        max-width: 100px;
+    }
+
+    .clearfix::before {
+        display: inline;
+        content: '';
+        clear: none;
+        width: 50%;
+    }
+    .ads {
+        margin: 30px auto;
+    }
+
+    .fab{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+
+    label{
+        display: none;
+    }
+
+
+
+}
+   
+
+@media screen and (max-width: 768px){
+
+}
+ 
+
+
+@media screen and (max-width: 992px){
+
+}
+   
