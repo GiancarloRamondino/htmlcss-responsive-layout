@@ -1,26 +1,54 @@
 /* Soluzione qui */
 
 
-@media screen and (max-width: 576px){
+@media screen and (min-width: 576px){
     #topbar {
         height: 70px;
         padding: 0 20px;
         background-color: #fff;
-    
         display: flex;
         align-items: center;
-        justify-content: left;
+        justify-content: center;
     }
-
     .recipe-origin {
         display: inline-block;
     }
-
+    
     .recipe-name {
         color: #4e3969;
         font-weight: 700;
     }
-
+    .recipe-video > img{
+        max-width:576px;
+        height: 288px;
+    }
+    
+    .recipe-video{
+        height: 288px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .recipe-video > img{
+        width: 100%;
+        display: flex;
+        justify-self: center;
+    }
+    .ads {
+        display: none;
+        margin: 30px auto;
+    }
+    .fab{
+        display: flex;
+    }
+    label{
+        display: none;
+    }
+    .quick-notes {
+        margin-top: 30px;
+        display: flex ;
+    }
     .recipe-card {
         background-color: white;
         border-radius: 3px;
@@ -28,86 +56,186 @@
         margin-bottom: 30px;
         width: 100%;
     }
-
-    .recipe-video {
-        max-width: 100%;
-    }
-    
-
     
     hr{
         color: orange;
         max-width: 100px;
     }
-
+    
     .clearfix::before {
         display: inline;
         content: '';
         clear: none;
         width: 50%;
     }
+
+    .recipe-info {
+        padding: 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .recipe-video iframe {
+        border: 0;
+        width: 100px;
+        height: 100px;
+        display: flex;
+    }
+    
+}
+   
+
+@media screen and (min-width: 768px){
+    #topbar {
+        height: 70px;
+        padding: 0 20px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .quick-notes {
+        margin-top: 30px;
+        display: flex ;
+    }
+    .recipe-origin {
+        display: none;
+    }
+    
+    .recipe-name {
+        color: #4e3969;
+        font-weight: 800;
+    }
+    .recipe-video > img{
+        max-width:768px;
+        height: 384px;
+    }
+    
+    .recipe-video{
+        height: 384px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .recipe-video > img{
+        width: 100%;
+        display: flex;
+        justify-self: center;
+    }
     .ads {
         display: block;
         margin: 30px auto;
     }
-
     .fab{
         display: flex;
         padding-left: 20px;
         padding-right: 20px;
     }
-
-    
-    .recipe-info {
-	    padding: 30px;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    
-
     label{
         display: none;
     }
 
-    
-
-
-
-}
-   
-
-@media screen and (min-width: 768px){
-   
-    .quick-notes {
-        margin-top: 30px;
-        display: flex ;
-    }
 
 }
  
 
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 992px){
     #topbar {
         height: 70px;
         padding: 0 20px;
         background-color: #fff;
-    
         display: flex;
         align-items: center;
         justify-content: left;
     }
     
+    .recipe-origin {
+        display: inline-block;
+    }
+    
+    .recipe-name {
+        color: #4e3969;
+        font-weight: 900;
+    }
+
+    .recipe-video{
+        width: 100%;
+        height: 441px;
+        width: 100%;
+        display: flex;
+    }
+    
+    .recipe-video > img{
+        width: 100%;
+        display: flex;
+    }
+    .container {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    .ads {
+        display: block;
+        margin: 30px auto;
+    }
+    .fab{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     label{
         display: block;
     }
-    .quick-notes {
-        margin-top: 30px;
-        display: flex ;
-    }
-
-
 
 }
-   
+ 
+
+.quick-notes {
+    margin-top: 30px;
+    display: flex ;
+}
+
+
+
+.recipe-card {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgb(45 34 60 / 12%);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+
+
+
+hr{
+    color: orange;
+    max-width: 100px;
+}
+
+.clearfix::before {
+    display: inline;
+    content: '';
+    clear: none;
+    width: 50%;
+}
+
+
+
+
+
+.recipe-info {
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.recipe-video iframe {
+	border: 0;
+	width: 100px;
+	height: 100px;
+	display: flex;
+}
+
