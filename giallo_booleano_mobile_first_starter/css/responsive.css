@@ -21,6 +21,19 @@
         font-weight: 700;
     }
 
+    .recipe-card {
+        background-color: white;
+        border-radius: 3px;
+        box-shadow: 0 5px 10px rgb(45 34 60 / 12%);
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .recipe-video {
+        max-width: 100%;
+    }
+    
+
     
     hr{
         color: orange;
@@ -34,6 +47,7 @@
         width: 50%;
     }
     .ads {
+        display: block;
         margin: 30px auto;
     }
 
@@ -44,23 +58,56 @@
     }
 
     
+    .recipe-info {
+	    padding: 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    
 
     label{
         display: none;
     }
+
+    
 
 
 
 }
    
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
+   
+    .quick-notes {
+        margin-top: 30px;
+        display: flex ;
+    }
 
 }
  
 
 
 @media screen and (max-width: 992px){
+    #topbar {
+        height: 70px;
+        padding: 0 20px;
+        background-color: #fff;
+    
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    label{
+        display: block;
+    }
+    .quick-notes {
+        margin-top: 30px;
+        display: flex ;
+    }
+
+
 
 }
    
