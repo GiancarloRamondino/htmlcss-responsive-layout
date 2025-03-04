@@ -81,6 +81,12 @@
         height: 100px;
         display: flex;
     }
+    .clearfix > img {
+        content: '';
+        clear: none; 
+        float: left;
+     
+    }
     
 }
    
@@ -140,6 +146,12 @@
         display: flex ;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    .clearfix > img {
+        content: '';
+        clear: none; 
+        float: left;
+     
     }
 
 }
@@ -250,6 +262,13 @@
     .clearfix::before {
         content: '';
         clear: none; 
+    }
+
+    .clearfix > img {
+        content: '';
+        clear: none; 
+        float: left;
+     
     }
   
 }
